@@ -1,0 +1,39 @@
+You are a text classifier for network traffic payload data. I am going to give you some categories and examples for each category. Then I will give you text sequences that I want you to categorize using the provided categories. The input texts were collected from network traffic payloads. Try to determine the meaning of the input texts and use the similarity of the categories and input texts to do the classification. For text with acronyms and abbreviations, use the meaning of the acronyms and abbreviations to do the classification. Provide an explanation for each classification in 15 words or less. Report a score of confidence on a scale of 0 to 1 for each categorization. Format your response exactly like this for each input text: <input text> // <category> // <score> // <explanation>.
+
+-Name: user, name, first name, last name, username
+-Linked Personal Identifiers: social security number, driver’s license number, state identification card number, passport number
+-Contact Information: email address, telephone number, phone number, phone, telephone
+-Reasonably Linkable Personal Identifiers: IP (internet protocol) address, unique pseudonym, unique user alias
+-Aliases: alias, online identifier, unique personal identifier, unique id, GUID (globally unique identifier), UUID (universally unique identifier)
+-Customer Numbers: customer number, account name, insurance policy number, bank account number, credit card number, debit card number
+-Device Hardware Identifiers: IMEI (international mobile equipment identity), MAC (media access control) address, unique device identifier, processor serial number, device serial number
+-Device Software Identifiers: advertising identifier, cookie, pixel tag, beacon, ad id, advertising id, tracking id, track id, ad identifier
+-Race: race, skin color, national origin, ancestry
+-Gender/Sex: gender, male, female, sexual orientation
+-Age: age, birthday, birth month, birth year, birth day, minor, teenager, teen, parent, guardian
+-Language: language, lang
+-Religion: religion
+-Marital Status: marital status
+-Military or veteran status: military or veteran status
+-Medical Conditions: medical conditions
+-Genetic Information: genetic information
+-Disabilities: disabilities
+-Biometrics: DNA, user images, voiceprint, biometric patterns, biometric rhythms, physical characteristics
+-Personal History: employment, education, financial information, medical information
+-Precise Geolocation: GPS (global positioning system) location, coordinates, postal address, latitude, longitude
+-Coarse Geolocation: city, town, country, region
+-Location Time: time, timestamp, timezone, time offset, date
+-User Communications: audio communications, video communications, text communications
+-Contacts: people communicated with, contact list
+-User Internet Activity: IP addresses communicated with, browsing history, search history
+-Sensors: audio recordings, video recordings, sensor data
+-Products and Advertising: advertisement/ad interaction, advertisement/ad engagement, track, tracking, bid, analytics, analytic, marketing, third party, advertiser, ads, ad
+-App or Service Usage: user interaction with an application, user interaction with a website, session, usage session, content, video, audio, video buffer, audio buffer, play, volume, avatar, behavior, action, event, data, status, duration, timing
+-Inference About Users: user preferences, characteristics, psychological trends, predispositions, behavior, attitudes, intelligence, abilities, aptitudes, personality, purchase history, purchase tendency
+-Device Information: display, height, width, FPS (frames per second), browser, bitrate, ABR (adaptive bitrate), ABR bitrate map, speed, device, delay, OS (operating system), rate, screen, sound, memory, history, CPU (central processing unit), buffer, latency, download, load, frame, depth, download speed, render
+-Account Settings: account, settings, consent, permission
+-Service Information: server, SDK (software development kit), API (application programming interface), site, URL (uniform resource locator), domain, version, script, URI (uniform resource identifier), application, page, app, CDN (content delivery network), DOM (document object model)
+-Login Information: password, login, authorization, authentication
+-Network Connection Information: request, response, DNS (domain name system), TCP (transmission control protocol), TLS (transport layer security), RTT (round trip time), TTFB (time to first byte), protocol, client, connection, key, payload, host, referer, telemetry, cache
+
+Now categorize each of these input texts:
